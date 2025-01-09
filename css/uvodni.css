@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url("../img/background.avif");
+    background-size: cover;
+}
+
+header {
+    background-color: #0000ff;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 2em;
+}
+
+main {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: row;
+}
+
+.flex-container div {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+    flex: 25%
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        width: 90%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+}
