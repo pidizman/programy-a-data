@@ -1,80 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programy a data | Úvodní stránka</title>
-    <link rel="stylesheet" href="./css/uvodni.css">
-</head>
-
-<body>
-    <header>
-        <h1>Programy a data</h1>
-        <p>Úvodní stránka</p>
-    </header>
-
-    <main>
-        <h2>Obsah stránek</h2>
-        <div class="flex-container">
-            <div>
-                <h3><a href="./a/index.html">Programové a datové soubory</a></h3>
-                <ul>
-                    <li><a href="./a/index.html#soubory-a-adresare">Soubory a adresáře</a></li>
-                    <li><a href="./a/index.html#programove-soubory">Programové soubory</a></li>
-                    <li><a href="./a/index.html#datove-soubory">Datové soubory</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Programy a data</title>
+        <link rel="stylesheet" href="./css/output.css" />
+    </head>
+    <body>
+        <header
+            class="bg-background py-5 px-10 flex justify-between items-center shadow-md sticky top-0 z-1000"
+        >
+            <h1 class="m-0 text-green text-2xl">Programy a Data</h1>
+            <div
+                class="hidden flex-col gap-1 cursor-pointer"
+                onclick="toggleMenu()"
+            >
+                <span class="block w-6 h-1 bg-white"></span>
+                <span class="block w-6 h-1 bg-white"></span>
+                <span class="block w-6 h-1 bg-white"></span>
             </div>
-            <div>
-                <h3><a>Lorem ipsum dolor sit amet.</a></h3>
-                <ul>
-                    <li><a href="">Odkaz 1</a></li>
-                    <li><a href="">Odkaz 2</a></li>
-                    <li><a href="">Odkaz 3</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3><a>Lorem ipsum dolor sit amet.</a></h3>
-                <ul>
-                    <li><a href="">Odkaz 1</a></li>
-                    <li><a href="">Odkaz 2</a></li>
-                    <li><a href="">Odkaz 3</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3><a>Lorem ipsum dolor sit amet.</a></h3>
-                <ul>
-                    <li><a href="">Odkaz 1</a></li>
-                    <li><a href="">Odkaz 2</a></li>
-                    <li><a href="">Odkaz 3</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3><a>Lorem ipsum dolor sit amet.</a></h3>
-                <ul>
-                    <li><a href="">Odkaz 1</a></li>
-                    <li><a href="">Odkaz 2</a></li>
-                    <li><a href="">Odkaz 3</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3><a>Lorem ipsum dolor sit amet.</a></h3>
-                <ul>
-                    <li><a href="">Odkaz 1</a></li>
-                    <li><a href="">Odkaz 2</a></li>
-                    <li><a href="">Odkaz 3</a></li>
-                </ul>
-            </div>            
-    </main>
-
-    <footer>
-        <hr>
-        <p>&copy; 2024 - Filip Dvořák, IT1</p>
-        <p><a href="https://www.sspu-opava.cz" target="_blank">
-            <img src="./img/skola-logo.png" alt="Školní logo"></a></p>
-        <p><a href="https://www.sspu-opava.cz" target="_blank">Web školy</a></p>
-    </footer>
-
-</body>
-
+            <nav class="flex gap-4">
+                <a
+                    href="#"
+                    class="text-white transition-colors hover:text-green"
+                    >Lorem</a
+                >
+                <a
+                    href="#"
+                    class="text-white transition-colors hover:text-green"
+                    >Impsu</a
+                >
+                <a
+                    href="#"
+                    class="text-white transition-colors hover:text-green"
+                    >Doller</a
+                >
+            </nav>
+        </header>
+        <section
+            class="flex flex-col items-center justify-center text-center py-20 px-5 bg-gradient-to-r from-[#393E46] to-[#222831] text-white"
+        >
+            <h2 class="text-green text-4xl mb-5">Lorem ipsum dolor sit amet</h2>
+            <p class="max-w-[700px] my-0 mx-auto text-lg">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Aliquam ornare wisi eu metus. Nunc dapibus tortor vel mi dapibus
+                sollicitudin. Nullam eget nisl. Aliquam id dolor. Aliquam erat
+                volutpat. Mauris metus. Aliquam ornare wisi eu metus. Sed ac
+                dolor sit amet purus malesuada congue. Integer in sapien.
+            </p>
+        </section>
+    </body>
 </html>
