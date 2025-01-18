@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="cs">
 
 <head>
@@ -49,7 +49,7 @@
             linkované knihovny), které mohou být podle potřeby za běhu (dynamicky) připojeny k jednomu i více programům.
         </p>
         <h3>Spustitelné soubory a rezidentní programy</h3>
-        <p>Některé soubory s tzv. spustitelnou příponou (např. .exe a .com ve Windows, .sh v 
+        <p>Některé soubory s tzv. spustitelnou příponou (např. .exe a .com ve Windows, .sh v
             <a href="https://cs.wikipedia.org/wiki/Linux" target="_blank">Linuxu</a>) slouží ke spuštění
             programu - aktivaci procesu v rámci operačního systému. Za rezidentní programy (služby, démony) označujeme
             ty procesy, které jsou spuštěny automaticky po iniciaci operačního systému (např. antivirové programy).</p>
@@ -60,7 +60,7 @@
         <figure>
             <img src="../img/licence.svg" alt="Softwarové licence" width="1000">
             <figcaption>Myšlenková mapa: Softwarové licence</figcaption>
-        </figure>    
+        </figure>
     </main>
     <footer>
         <hr>
@@ -71,4 +71,148 @@
     </footer>
 </body>
 
+</html> -->
+
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Programy a Data</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #eeeeee;
+                color: #222831;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #7bc74d;
+                color: #eeeeee;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+            }
+            nav {
+                display: flex;
+                gap: 15px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #eeeeee;
+                font-weight: bold;
+                position: relative;
+                display: inline-block;
+                transition: width 0.3s ease;
+                overflow: hidden;
+                white-space: nowrap;
+                width: 20px; /* Initial width for the single letter */
+            }
+            nav a:hover {
+                width: auto; /* Expands to fit the full text */
+            }
+            nav a::after {
+                content: attr(data-title);
+                color: #eeeeee;
+                padding-left: 5px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            nav a:hover::after {
+                opacity: 1;
+            }
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            .section-link {
+                display: block;
+                background-color: #393e46;
+                color: #eeeeee;
+                text-decoration: none;
+                padding: 15px;
+                margin: 10px 0;
+                text-align: center;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+            .section-link:hover {
+                background-color: #7bc74d;
+                color: #222831;
+            }
+            footer {
+                background-color: #222831;
+                color: #eeeeee;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Programy a Data</h1>
+            <nav>
+                <a href="#section-A" data-title="- Programové a datové soubory"
+                    >A</a
+                >
+                <a href="#section-B" data-title="- Operační systémy">B</a>
+                <a href="#section-C" data-title="- Ovladače, firmware a utility"
+                    >C</a
+                >
+                <a href="#section-D" data-title="- Aplikační software">D</a>
+                <a href="#section-E" data-title="- Instalace programů">E</a>
+                <a href="#section-F" data-title="- Softwarové licence">F</a>
+                <a href="#section-G" data-title="- Emulace a virtualizace">G</a>
+                <a href="#section-H" data-title="- Cloudová řešení">H</a>
+                <a href="#section-I" data-title="- Zálohování programů a dat"
+                    >I</a
+                >
+                <a href="#section-J" data-title="- Shrnutí a závěr">J</a>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Obsah</h2>
+            <a class="section-link" href="section-A.html"
+                >A - Programové a datové soubory</a
+            >
+            <a class="section-link" href="section-B.html"
+                >B - Operační systémy</a
+            >
+            <a class="section-link" href="section-C.html"
+                >C - Ovladače, firmware a utility</a
+            >
+            <a class="section-link" href="section-D.html"
+                >D - Aplikační software</a
+            >
+            <a class="section-link" href="section-E.html"
+                >E - Instalace programů</a
+            >
+            <a class="section-link" href="section-F.html"
+                >F - Softwarové licence</a
+            >
+            <a class="section-link" href="section-G.html"
+                >G - Emulace a virtualizace</a
+            >
+            <a class="section-link" href="section-H.html"
+                >H - Cloudová řešení</a
+            >
+            <a class="section-link" href="section-I.html"
+                >I - Zálohování programů a dat</a
+            >
+            <a class="section-link" href="section-J.html"
+                >J - Shrnutí a závěr</a
+            >
+        </div>
+        <footer>
+            <p>&copy; 2025 Výukový materiál - Marek Lučný</p>
+        </footer>
+    </body>
 </html>

@@ -12,42 +12,75 @@
         >
             <h1 class="m-0 text-green text-2xl">Programy a Data</h1>
             <div
-                class="hidden flex-col gap-1 cursor-pointer"
-                onclick="toggleMenu()"
+                id="hamburger"
+                class="hidden flex-col gap-1 cursor-pointer max-md:flex md:hidden"
+                onclick="openNav()"
             >
                 <span class="block w-6 h-1 bg-white"></span>
                 <span class="block w-6 h-1 bg-white"></span>
                 <span class="block w-6 h-1 bg-white"></span>
             </div>
-            <nav class="flex gap-4">
+            <nav class="flex gap-4 max-md:hidden">
                 <a
-                    href="#"
-                    class="text-white transition-colors hover:text-green"
-                    >Lorem</a
+                    class="navi-item"
+                    href="#section-A"
+                    data-title="- Programové a datové soubory"
+                    >A</a
                 >
                 <a
-                    href="#"
-                    class="text-white transition-colors hover:text-green"
-                    >Impsu</a
+                    class="navi-item"
+                    href="#section-B"
+                    data-title="- Operační systémy"
+                    >B</a
                 >
                 <a
-                    href="#"
-                    class="text-white transition-colors hover:text-green"
-                    >Doller</a
+                    class="navi-item"
+                    href="#section-C"
+                    data-title="- Ovladače, firmware a utility"
+                    >C</a
                 >
             </nav>
         </header>
+        <div
+            id="mobile-menu"
+            class="h-0 w-full fixed z-10 top-0 left-0 bg-gray-900 overflow-y-hidden transition duration-500"
+        >
+            <a
+                href="javascript:void(0)"
+                class="absolute top-5 right-11 text-6xl"
+                onclick="closeNav()"
+                >&times;</a
+            >
+            <div class="relative top-1/4 w-full text-center mt-[1.875rem]">
+                <a
+                    href="#"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >A - Programové a datové soubory</a
+                >
+                <a
+                    href="#"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >B - Operační systémy</a
+                >
+                <a
+                    href="#"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >C - Ovladače, firmware a utility</a
+                >
+            </div>
+        </div>
         <section
             class="flex flex-col items-center justify-center text-center py-20 px-5 bg-gradient-to-r from-[#393E46] to-[#222831] text-white"
         >
-            <h2 class="text-green text-4xl mb-5">Lorem ipsum dolor sit amet</h2>
+            <h2 class="text-green text-4xl mb-5">
+                Výukový materiál: Programy a data
+            </h2>
             <p class="max-w-[700px] my-0 mx-auto text-lg">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aliquam ornare wisi eu metus. Nunc dapibus tortor vel mi dapibus
-                sollicitudin. Nullam eget nisl. Aliquam id dolor. Aliquam erat
-                volutpat. Mauris metus. Aliquam ornare wisi eu metus. Sed ac
-                dolor sit amet purus malesuada congue. Integer in sapien.
+                Tato stránka slouží jako výukový materiál na téma programy a
+                data.
             </p>
         </section>
+        <main></main>
+        <script src="./script.js"></script>
     </body>
 </html>

@@ -7,8 +7,13 @@ module.exports = {
       green: "#7bc74d",
       white: "#eeeeee",
       gray: "#393e46",
+      "gray-900": "rgba(57, 62, 70, 0.9)",
     },
-    extend: {},
+    extend: {
+      transitionProperty: {
+        width: "width",
+      },
+    },
   },
   plugins: [],
 };
