@@ -4,21 +4,88 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Programové a datové soubory</title>
-        <link rel="stylesheet" href="../css/styly.css" />
+        <link rel="stylesheet" href="../css/output.css" />
     </head>
-
     <body>
-        <header>
-            <h1>Programové a datové soubory</h1>
+        <header
+            class="bg-background py-5 px-10 flex justify-between items-center shadow-md top-0 z-1000"
+        >
+            <h1 class="m-0 text-green text-2xl">Programy a Data</h1>
+            <div
+                id="hamburger"
+                class="hidden flex-col gap-1 cursor-pointer max-md:flex md:hidden"
+                onclick="openNav()"
+            >
+                <span class="block w-6 h-1 bg-white"></span>
+                <span class="block w-6 h-1 bg-white"></span>
+                <span class="block w-6 h-1 bg-white"></span>
+            </div>
+            <nav class="flex gap-4 max-md:hidden">
+                <a
+                    class="navi-item"
+                    href="./a/index.html"
+                    data-title="- Programové a datové soubory"
+                    >A</a
+                >
+                <a
+                    class="navi-item"
+                    href="#section-B"
+                    data-title="- Operační systémy"
+                    >B</a
+                >
+                <a
+                    class="navi-item"
+                    href="#section-C"
+                    data-title="- Ovladače, firmware a utility"
+                    >C</a
+                >
+            </nav>
         </header>
-        <nav class="topnav">
-            <a href="../index.html">Úvodní stránka</a>
-            <a class="active" href="#">Programové a datové soubory</a>
-            <a href="#">Operační systémy</a>
-            <a href="#">Systémové soubory</a>
-        </nav>
-        <main>
-            <h2 id="soubory-a-adresare">Soubory a adresáře</h2>
+        <div
+            id="mobile-menu"
+            class="h-0 w-full fixed z-10 top-0 left-0 bg-gray-900 overflow-y-hidden transition duration-500"
+        >
+            <a
+                href="javascript:void(0)"
+                class="absolute top-5 right-11 text-6xl"
+                onclick="closeNav()"
+                >&times;</a
+            >
+            <div class="relative top-1/4 w-full text-center mt-[1.875rem]">
+                <a
+                    href="./index.html"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >A - Programové a datové soubory</a
+                >
+                <a
+                    href="#"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >B - Operační systémy</a
+                >
+                <a
+                    href="#"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >C - Ovladače, firmware a utility</a
+                >
+            </div>
+        </div>
+        <section
+            class="flex flex-col items-center justify-center text-center py-20 px-5 bg-gradient-to-r from-[#393E46] to-[#222831] text-white"
+        >
+            <h2 class="text-green text-4xl mb-5">
+                Programové a datové soubory
+            </h2>
+            <p class="max-w-[700px] my-0 mx-auto text-lg">
+                Soubory a adresáře tvoří základ organizace dat v počítači,
+                umožňují efektivní ukládání, uspořádání a zpracování informací,
+                ať už jde o programové instrukce, datové soubory nebo systémové
+                knihovny.
+            </p>
+        </section>
+        <main class="m-5">
+            <h2 id="soubory-a-adresare" class="text-2xl m-5">
+                Soubory a adresáře
+            </h2>
             <p>
                 Soubor (file) je množina souvisejících dat uložených na diskové
                 jednotce. Název souboru je obvykle tvořen jménem (ve Windows až
@@ -50,7 +117,9 @@
                     s?s.txt).
                 </li>
             </ul>
-            <h2 id="programove-soubory">Programové soubory</h2>
+            <h2 id="programove-soubory" class="text-2xl m-5">
+                Programové soubory
+            </h2>
             <p>
                 Programové soubory obsahují instrukce, podle nichž procesor ve
                 spolupráci s dalšími hardwarovými komponentami plní konkrétní
@@ -82,7 +151,7 @@
                 označujeme ty procesy, které jsou spuštěny automaticky po
                 iniciaci operačního systému (např. antivirové programy).
             </p>
-            <h2 id="datove-soubory">Datové soubory</h2>
+            <h2 id="datove-soubory" class="text-2xl m-5">Datové soubory</h2>
             <p>
                 Datové soubory obsahují data různého charakteru (číselné,
                 textové, grafické, zvukové údaje). K jejich zpracování se
@@ -93,28 +162,12 @@
             </p>
             <figure>
                 <img
-                    src="../img/licence.svg"
+                    src="../img/licence.png"
                     alt="Softwarové licence"
                     width="1000"
                 />
                 <figcaption>Myšlenková mapa: Softwarové licence</figcaption>
             </figure>
         </main>
-        <footer>
-            <hr />
-            <p>
-                &copy; 2024 - <b>Filip Dvořák</b>, <b><i>IT1</i></b>
-            </p>
-            <p>
-                <a href="https://www.sspu-opava.cz" target="_blank"
-                    ><img src="../img/skola-logo.png" alt="Školní logo"
-                /></a>
-            </p>
-            <p>
-                <a href="https://www.sspu-opava.cz" target="_blank"
-                    >Web školy</a
-                >
-            </p>
-        </footer>
     </body>
 </html>
