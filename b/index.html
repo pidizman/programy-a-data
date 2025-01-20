@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Programové a datové soubory</title>
+        <link rel="stylesheet" href="../css/output.css" />
+    </head>
+    <body>
+        <header
+            class="bg-background py-5 px-10 flex justify-between items-center shadow-md top-0 z-1000"
+        >
+            <h1 class="m-0 text-green text-2xl">
+                <a href="../index.html">Programy a Data</a>
+            </h1>
+            <div
+                id="hamburger"
+                class="hidden flex-col gap-1 cursor-pointer max-md:flex md:hidden"
+                onclick="openNav()"
+            >
+                <span class="block w-6 h-1 bg-white"></span>
+                <span class="block w-6 h-1 bg-white"></span>
+                <span class="block w-6 h-1 bg-white"></span>
+            </div>
+            <nav class="flex gap-4 max-md:hidden">
+                <a
+                    class="navi-item"
+                    href="../a/index.html"
+                    data-title="- Programové a datové soubory"
+                    >A</a
+                >
+                <a
+                    class="navi-item"
+                    href="./index.html"
+                    data-title="- Operační systémy"
+                    >B</a
+                >
+                <a
+                    class="navi-item"
+                    href="#section-C"
+                    data-title="- Ovladače, firmware a utility"
+                    >C</a
+                >
+            </nav>
+        </header>
+        <div
+            id="mobile-menu"
+            class="h-0 w-full fixed z-10 top-0 left-0 bg-gray-900 overflow-y-hidden transition duration-500"
+        >
+            <a
+                href="javascript:void(0)"
+                class="absolute top-5 right-11 text-6xl"
+                onclick="closeNav()"
+                >&times;</a
+            >
+            <div class="relative top-1/4 w-full text-center mt-[1.875rem]">
+                <a
+                    href="../a/index.html"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >A - Programové a datové soubory</a
+                >
+                <a
+                    href="./index.html"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >B - Operační systémy</a
+                >
+                <a
+                    href="#"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >C - Ovladače, firmware a utility</a
+                >
+            </div>
+        </div>
+        <section
+            class="flex flex-col items-center justify-center text-center py-20 px-5 bg-gradient-to-r from-[#393E46] to-[#222831] text-white"
+        >
+            <h2 class="text-green text-4xl mb-5">Operační systémy</h2>
+            <p class="max-w-[700px] my-0 mx-auto text-lg">
+                Operační systémy jsou klíčovým softwarem, který umožňuje
+                efektivní využití hardwaru, správu procesů a zařízení, a
+                poskytuje uživatelské i aplikační rozhraní pro různé typy
+                zařízení od serverů až po mobilní zařízení.
+            </p>
+        </section>
+        <!-- max-md:gap-3 max-md:text-xs -->
+        <div
+            class="w-full h-11 text-lg flex gap-6 justify-center items-center bg-gradient-to-r from-[#393E46] to-[#222831]"
+        >
+            <a class="hover:text-green" href="#uvod">Úvod</a>
+            <a class="hover:text-green" href="#vyvoj">Vývoj OS</a>
+            <a class="hover:text-green" href="#funkce">Funkce OS</a>
+            <a class="hover:text-green" href="#typy">Typy OS</a>
+        </div>
+        <main class="m-5">
+            <h2 id="uvod" class="text-2xl m-5 font-semibold">
+                Úvod do operačních systémů
+            </h2>
+            <p>
+                Programové vybavení (software) je nezbytné pro využití
+                technického vybavení (hardware). Na počátku vývoje moderních
+                operačních systémů byl klíčový víceúlohový a víceuživatelský
+                přístup. V raných dobách byly programy vytvářeny specificky pro
+                konkrétní hardware.
+            </p>
+            <h2 id="vyvoj" class="text-2xl m-5 font-semibold">
+                Vývoj operačních systémů
+            </h2>
+            <p>
+                UNIX, který vznikl v 70. letech, byl průkopníkem na sálových i
+                minipočítačích. Jeho principy ovlivnily další operační systémy.
+                V 80. letech soupeřily Microsoft (MS DOS) a Apple (Mac OS),
+                který jako první zavedl grafické uživatelské rozhraní. Tento
+                koncept převzal i MS Windows, který dominoval na přelomu
+                tisíciletí.
+            </p>
+            <p>
+                Linux, pojmenovaný po Linusu Torvaldsovi, získal popularitu díky
+                svému volnému šíření a dnes je často instalován na síťových
+                serverech.
+            </p>
+            <h2 id="funkce" class="text-2xl m-5 font-semibold">
+                Funkce operačních systémů
+            </h2>
+            <p>
+                Základem každého OS je jádro systému, které spravuje hardware,
+                procesy, paměť a zařízení. Pro komunikaci s hardwarem využívá
+                ovladače (drivers). Důležitou funkcí OS je aplikační rozhraní
+                (API), které vývojářům usnadňuje tvorbu aplikací, a uživatelské
+                rozhraní (CLI nebo GUI) pro interakci s uživatelem.
+            </p>
+            <h2 id="typy" class="text-2xl m-5 font-semibold">
+                Typy operačních systémů
+            </h2>
+            <p>Operační systémy lze rozdělit podle použití:</p>
+            <ul class="list-disc mx-4 my-2">
+                <li>
+                    Systémy pro síťové servery (např. MS Windows Server, Linux,
+                    Unix)
+                </li>
+                <li>
+                    Pro běžné osobní počítače (např. MS Windows, OS X, Linux
+                    Ubuntu)
+                </li>
+                <li>Pro mobilní zařízení (Android, iOS, Windows Phone)</li>
+                <li>
+                    RTOS (Real-Time Operating System) pro chytrá zařízení a
+                    průmyslové aplikace
+                </li>
+            </ul>
+            <p>
+                RTOS je klíčový pro aplikace vyžadující okamžitou reakci,
+                například v robotice nebo průmyslu.
+            </p>
+        </main>
+        <footer class="bg-gray text-center p-5 mt-5 w-full h-16">
+            <p>
+                &copy; 2025 Stránky vytvořil s ❤️ -
+                <a
+                    class="hover:text-green"
+                    href="https://github.com/pidizman/"
+                    target="_blank"
+                    >Filip Dvořák</a
+                >
+            </p>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>
