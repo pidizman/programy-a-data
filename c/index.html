@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ovladače, firmware a utility</title>
+        <link rel="stylesheet" href="../css/output.css" />
+    </head>
+    <body>
+        <header
+            class="bg-background py-5 px-10 flex justify-between items-center shadow-md top-0 z-1000"
+        >
+            <h1 class="m-0 text-green text-2xl">
+                <a href="../index.html">Programy a Data</a>
+            </h1>
+            <div
+                id="hamburger"
+                class="hidden flex-col gap-1 cursor-pointer max-md:flex md:hidden"
+                onclick="openNav()"
+            >
+                <span class="block w-6 h-1 bg-white"></span>
+                <span class="block w-6 h-1 bg-white"></span>
+                <span class="block w-6 h-1 bg-white"></span>
+            </div>
+            <nav class="flex gap-4 max-md:hidden">
+                <a
+                    class="navi-item"
+                    href="../a/index.html"
+                    data-title="- Programové a datové soubory"
+                    >A</a
+                >
+                <a
+                    class="navi-item"
+                    href="../b/index.html"
+                    data-title="- Operační systémy"
+                    >B</a
+                >
+                <a
+                    class="navi-item"
+                    href="./index.html"
+                    data-title="- Ovladače, firmware a utility"
+                    >C</a
+                >
+            </nav>
+        </header>
+        <div
+            id="mobile-menu"
+            class="h-0 w-full fixed z-10 top-0 left-0 bg-gray-900 overflow-y-hidden transition duration-500"
+        >
+            <a
+                href="javascript:void(0)"
+                class="absolute top-5 right-11 text-6xl"
+                onclick="closeNav()"
+                >&times;</a
+            >
+            <div class="relative top-1/4 w-full text-center mt-[1.875rem]">
+                <a
+                    href="../a/index.html"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >A - Programové a datové soubory</a
+                >
+                <a
+                    href="./index.html"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >B - Operační systémy</a
+                >
+                <a
+                    href="#"
+                    class="p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green"
+                    >C - Ovladače, firmware a utility</a
+                >
+            </div>
+        </div>
+        <section
+            class="flex flex-col items-center justify-center text-center py-20 px-5 bg-gradient-to-r from-[#393E46] to-[#222831] text-white"
+        >
+            <h2 class="text-green text-4xl mb-5">
+                Ovladače, firmware a utility
+            </h2>
+            <p class="max-w-[700px] my-0 mx-auto text-lg">
+                Systémový software zahrnuje operační systémy, ovladače zařízení,
+                firmware a utility, které společně zajišťují správu hardwaru,
+                komunikaci mezi zařízeními a efektivní provoz počítače i
+                vestavěných systémů.
+            </p>
+        </section>
+        <!-- max-md:gap-3 max-md:text-xs -->
+        <div
+            class="w-full h-11 text-lg flex gap-6 justify-center items-center bg-gradient-to-r from-[#393E46] to-[#222831]"
+        >
+            <a class="hover:text-green" href="#komponenty">Komponenty</a>
+            <a class="hover:text-green" href="#ovladace-zarizeni"
+                >Ovladače zařízení</a
+            >
+            <a class="hover:text-green" href="#firmware">Firmware</a>
+            <a class="hover:text-green" href="#utility">Utility</a>
+        </div>
+        <main class="m-5">
+            <h2 id="komponenty" class="text-2xl m-5 font-semibold">
+                Komponenty systémového software
+            </h2>
+            <p>
+                Systémový software zahrnuje operační systémy, ovladače
+                hardwarových zařízení, firmware a utility.
+            </p>
+            <h2 id="ovladace-zarizeni" class="text-2xl m-5 font-semibold">
+                Ovladače zařízení (Device Drivers)
+            </h2>
+            <p>
+                Ovladače zařízení jsou speciální programy, které umožňují
+                operačnímu systému komunikovat s technickým vybavením. Bez
+                správného ovladače zařízení nemůže fungovat.
+            </p>
+            <ul class="list-disc mx-4 my-2">
+                <li>
+                    Moderní operační systémy obsahují standardní ovladače pro
+                    běžná zařízení, jako jsou flash disky, myši nebo klávesnice.
+                </li>
+                <li>
+                    Standard Plug and Play (PnP) umožňuje automatickou detekci
+                    nového hardware a instalaci ovladače.
+                </li>
+                <li>
+                    Pokud ovladač není dostupný, musí být nainstalován manuálně,
+                    například z CD nebo stažením od výrobce.
+                </li>
+            </ul>
+            <p>
+                Nevhodný ovladač může způsobit nefunkčnost zařízení nebo celého
+                systému.
+            </p>
+            <h2 id="firmware" class="text-2xl m-5 font-semibold">Firmware</h2>
+            <p>
+                Firmware je programové vybavení určené k řízení vestavěných
+                systémů (embedded systems), jako jsou kalkulačky, digitální
+                fotoaparáty nebo routery.
+            </p>
+            <p>
+                Aktualizace firmwaru dříve vyžadovala fyzickou výměnu paměťového
+                média. Dnes se díky flash pamětem může aktualizovat přepsáním.
+            </p>
+            <p>
+                V počítačích je základním firmwarem BIOS, který zajišťuje start
+                systému a konfiguraci hardware.
+            </p>
+            <h2 id="utility" class="text-2xl m-5 font-semibold">Utility</h2>
+            <p>
+                Utility jsou menší pomocné programy, které usnadňují servisní
+                operace:
+            </p>
+            <ul class="list-disc mx-4 my-2">
+                <li>Komprimační programy</li>
+                <li>Diagnostické a testovací nástroje</li>
+                <li>Programy pro kontrolu a optimalizaci OS</li>
+                <li>Nástroje pro defragmentaci nebo kontrolu disku</li>
+            </ul>
+            <p>Příklady utilit v operačních systémech:</p>
+            <ul class="list-disc mx-4 my-2">
+                <li>
+                    Správce úloh (Task Manager) pro sledování využití zdrojů
+                </li>
+                <li>Příkazové nástroje jako ping nebo ipconfig</li>
+            </ul>
+        </main>
+        <footer class="bg-gray text-center p-5 mt-5 w-full h-16">
+            <p>
+                &copy; 2025 Stránky vytvořil s ❤️ -
+                <a
+                    class="hover:text-green"
+                    href="https://github.com/pidizman/"
+                    target="_blank"
+                    >Filip Dvořák</a
+                >
+            </p>
+        </footer>
+        <script src="../script.js"></script>
+    </body>
+</html>
+
+<!-- <h2>Komponenty systémového software</h2>
+            <p>Systémový software zahrnuje operační systémy, ovladače hardwarových zařízení, firmware a utility.</p>
+        </section>
+        <section>
+            <h2>Ovladače zařízení (Device Drivers)</h2>
+            <p>Ovladače zařízení jsou speciální programy, které umožňují operačnímu systému komunikovat s technickým vybavením. Bez správného ovladače zařízení nemůže fungovat.</p>
+            <ul>
+                <li>Moderní operační systémy obsahují standardní ovladače pro běžná zařízení, jako jsou flash disky, myši nebo klávesnice.</li>
+                <li>Standard Plug and Play (PnP) umožňuje automatickou detekci nového hardware a instalaci ovladače.</li>
+                <li>Pokud ovladač není dostupný, musí být nainstalován manuálně, například z CD nebo stažením od výrobce.</li>
+            </ul>
+            <p>Nevhodný ovladač může způsobit nefunkčnost zařízení nebo celého systému.</p>
+        </section>
+        <section>
+            <h2>Firmware</h2>
+            <p>Firmware je programové vybavení určené k řízení vestavěných systémů (embedded systems), jako jsou kalkulačky, digitální fotoaparáty nebo routery.</p>
+            <p>Aktualizace firmwaru dříve vyžadovala fyzickou výměnu paměťového média. Dnes se díky flash pamětem může aktualizovat přepsáním.</p>
+            <p>V počítačích je základním firmwarem BIOS, který zajišťuje start systému a konfiguraci hardware.</p>
+        </section>
+        <section>
+            <h2>Utility</h2>
+            <p>Utility jsou menší pomocné programy, které usnadňují servisní operace:</p>
+            <ul>
+                <li>Komprimační programy</li>
+                <li>Diagnostické a testovací nástroje</li>
+                <li>Programy pro kontrolu a optimalizaci OS</li>
+                <li>Nástroje pro defragmentaci nebo kontrolu disku</li>
+            </ul>
+            <p>Příklady utilit v operačních systémech:</p>
+            <ul>
+                <li>Správce úloh (Task Manager) pro sledování využití zdrojů</li>
+                <li>Příkazové nástroje jako ping nebo ipconfig</li>
+            </ul> -->

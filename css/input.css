@@ -10,6 +10,10 @@ html {
     @apply scroll-smooth;
 }
 
+h2 {
+    @apply text-green;
+}
+
 .navi-item {
     @apply text-white font-bold relative inline-block transition-width duration-300 ease-in-out overflow-hidden whitespace-nowrap w-5;
 }
