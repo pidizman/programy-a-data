@@ -14,11 +14,13 @@ h2 {
     @apply text-green;
 }
 
-.navi-item {
+.navi-item,
+.home {
     @apply text-white font-bold relative inline-block transition-width duration-300 ease-in-out overflow-hidden whitespace-nowrap w-5;
 }
 
-.navi-item:hover {
+.navi-item:hover,
+.home:hover {
     @apply w-auto text-green;
 }
 
@@ -26,6 +28,15 @@ h2 {
     @apply content-[attr(data-title)] text-green pl-1 opacity-0 transition-opacity duration-300 ease-in-out;
 }
 
-.navi-item:hover::after {
+.home::after {
+    @apply content-[attr(data-title)] text-green opacity-0 transition-opacity duration-300 ease-in-out;
+}
+
+.navi-item:hover::after,
+.home:hover::after {
     @apply opacity-100;
+}
+
+.mobile-menu-item {
+    @apply p-2 text-4xl text-white block transition duration-300 hover:text-green focus:text-green;
 }
